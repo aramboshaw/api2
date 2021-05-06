@@ -1,0 +1,59 @@
+/*
+
+const cities = [
+    { id: 1, name: 'Chicago', state: 'IL', population: 2693976 },
+    { id: 2, name: 'Houston', state: 'TX', population: 2320268 },
+    { id: 3, name: 'Minneapolis', state: 'MN', population: 453403 },
+    { id: 4, name: 'Madison', state: 'WI', population: 258054 },
+    { id: 5, name: 'San Antonio', state: 'TX', population: 1327407 }
+  ]
+  
+
+  const justCityNames = cities.map(cities => cities.name);
+
+  console.log(justCityNames);
+
+  const bigCities = cities.filter(city => city.population > 1000000);
+
+  console.log(bigCities);
+
+
+  cities.forEach(element => console.log(element.name))
+
+
+const myAwesomeArray = [5, 4, 3, 2, 1]
+
+console.log(myAwesomeArray.map(x => x * x));
+
+
+myAwesomeArray.forEach(x => x * x)
+
+
+
+console.log(myAwesomeArray.forEach(x => x * x));
+
+
+
+const cities = [
+    { id: 1, name: 'Chicago', state: 'IL', population: 2693976 },
+    { id: 2, name: 'Houston', state: 'TX', population: 2320268 },
+    { id: 3, name: 'Minneapolis', state: 'MN', population: 453403 },
+    { id: 4, name: 'Madison', state: 'WI', population: 258054 },
+    { id: 5, name: 'San Antonio', state: 'TX', population: 1327407 }
+  ]
+
+
+  //let justCities = cities.map(cities => cities.name);
+
+  //cities.forEach(element => (console.log(element.name))
+
+  //let bigCities = cities.filter(city => city.population >= 1000000);
+*/
+
+
+for(let x = 20; x >1; x-2 ) {
+    console.log(x);
+
+}
+
+
