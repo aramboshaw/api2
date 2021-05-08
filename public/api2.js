@@ -100,33 +100,23 @@ function displayResults(json) {
     searchDisplay.removeChild(searchDisplay.firstChild);
   }
   
-  //console.log(json[0].media_type);
   
-
-  if (json[0].media_type === "image") { // **THIS
+  if (json[0].media_type === "image") { 
     console.log(json);
     for(let i = 0; i < json.length; i++) {
-      //console logging stuff
       
-
-      //initializing stuff
       let nasaDisplay = document.createElement("img")
       let nasaTitle = (json[i].explanation);
 
-      //console logging stuff
       console.log(json);
       console.log(nasaTitle);
       console.log(nasaDisplay);
 
-
-      //creating stuff
       nasaTitle = document.createElement("h3");
 
-      //putting stuff in stuff
       nasaDisplay.src = json[i].url
       nasaTitle.innerText = json[i].explanation;
 
-      //appending stuff
       searchDisplay.append(nasaDisplay);
       searchDisplay.appendChild(nasaTitle);
   
@@ -139,35 +129,6 @@ function displayResults(json) {
 
 
 /*
-   for(let x = 0; x < json.length; x++) {
-     switch(json[x].media_type) {
-       case "image":
-           console.log(json);
-           for(let i = 0; i < json.length; i++) {
-             //console logging stuff
-            
-      
-             //initializing stuff
-             let nasaDisplay = document.createElement("img")
-             let nasaTitle = (json.explanation);
-      
-             //console logging stuff
-             console.log(json);
-             console.log(nasaTitle);
-             console.log(nasaDisplay);
-     
-      
-             //creating stuff
-             nasaTitle = document.createElement("h3");
-      
-             //putting stuff in stuff
-             nasaDisplay.src = json[i].url
-             nasaTitle.innerText = json.explanation;
-      
-             //appending stuff
-             searchDisplay.append(nasaDisplay);
-             title.append(nasaTitle);
-           } 
       
          break;    
        case "video":
